@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/bram11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram11
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/rtl/fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/tb/fir_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_tb

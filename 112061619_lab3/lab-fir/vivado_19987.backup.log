@@ -1,0 +1,197 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Oct  9 10:22:56 2023
+# Process ID: 19987
+# Current directory: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir
+# Command line: vivado
+# Log file: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/vivado.log
+# Journal file: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2295.688 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fir_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'fir_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.sim/sim_1/behav/xsim/out_gold.dat'
+INFO: [SIM-utils-43] Exported '/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.sim/sim_1/behav/xsim/samples_triangular_wave.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj fir_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/bram11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram11
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/rtl/fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/shift_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/tb/fir_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fir_tb_behav xil_defaultlib.fir_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fir_tb_behav xil_defaultlib.fir_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/bram11.v" Line 3. Module bram11 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/bram11.v" Line 3. Module bram11 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fir
+Compiling module xil_defaultlib.bram11
+Compiling module xil_defaultlib.shift_ram
+Compiling module xil_defaultlib.fir_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fir_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fir_tb_behav -key {Behavioral:sim_1:Functional:fir_tb} -tclbatch {fir_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fir_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+------------Start simulation-----------
+----Start the data input(AXI-Stream)----
+----Start the coefficient input(AXI-lite)----
+ Check Coefficient ...
+OK: exp =           0, rdata =           0
+OK: exp =         -10, rdata =         -10
+OK: exp =          -9, rdata =          -9
+OK: exp =          23, rdata =          23
+OK: exp =          56, rdata =          56
+OK: exp =          63, rdata =          63
+OK: exp =          56, rdata =          56
+OK: exp =          23, rdata =          23
+OK: exp =          -9, rdata =          -9
+OK: exp =         -10, rdata =         -10
+OK: exp =           0, rdata =           0
+ Tape programming done ...
+ Start FIR
+OK: exp =           1, rdata =           1
+----End the coefficient input(AXI-lite)----
+[ERROR] [Pattern          0] Golden answer:           0, Your answer:         -10
+[ERROR] [Pattern          1] Golden answer:         -10, Your answer:         -29
+[ERROR] [Pattern          2] Golden answer:         -29, Your answer:         -25
+[ERROR] [Pattern          3] Golden answer:         -25, Your answer:          35
+[ERROR] [Pattern          4] Golden answer:          35, Your answer:         158
+[ERROR] [Pattern          5] Golden answer:         158, Your answer:         337
+[ERROR] [Pattern          6] Golden answer:         337, Your answer:         539
+[ERROR] [Pattern          7] Golden answer:         539, Your answer:         732
+[ERROR] [Pattern          8] Golden answer:         732, Your answer:         915
+[ERROR] [Pattern          9] Golden answer:         915, Your answer:        1098
+[ERROR] [Pattern         10] Golden answer:        1098, Your answer:        1281
+[ERROR] [Pattern         11] Golden answer:        1281, Your answer:        1464
+[ERROR] [Pattern         12] Golden answer:        1464, Your answer:        1647
+[ERROR] [Pattern         13] Golden answer:        1647, Your answer:        1830
+[ERROR] [Pattern         14] Golden answer:        1830, Your answer:        2013
+[ERROR] [Pattern         15] Golden answer:        2013, Your answer:        2196
+[ERROR] [Pattern         16] Golden answer:        2196, Your answer:        2379
+[ERROR] [Pattern         17] Golden answer:        2379, Your answer:        2562
+[ERROR] [Pattern         18] Golden answer:        2562, Your answer:        2745
+[ERROR] [Pattern         19] Golden answer:        2745, Your answer:        2928
+[ERROR] [Pattern         20] Golden answer:        2928, Your answer:        3111
+[ERROR] [Pattern         21] Golden answer:        3111, Your answer:        3294
+[ERROR] [Pattern         22] Golden answer:        3294, Your answer:        3477
+[ERROR] [Pattern         23] Golden answer:        3477, Your answer:        3660
+[ERROR] [Pattern         24] Golden answer:        3660, Your answer:        3843
+[ERROR] [Pattern         25] Golden answer:        3843, Your answer:        4026
+[ERROR] [Pattern         26] Golden answer:        4026, Your answer:        4209
+[ERROR] [Pattern         27] Golden answer:        4209, Your answer:        4392
+[ERROR] [Pattern         28] Golden answer:        4392, Your answer:        4575
+[ERROR] [Pattern         29] Golden answer:        4575, Your answer:        4758
+[ERROR] [Pattern         30] Golden answer:        4758, Your answer:        4941
+[ERROR] [Pattern         31] Golden answer:        4941, Your answer:        5124
+[ERROR] [Pattern         32] Golden answer:        5124, Your answer:        5307
+[ERROR] [Pattern         33] Golden answer:        5307, Your answer:        5490
+[ERROR] [Pattern         34] Golden answer:        5490, Your answer:        5673
+[ERROR] [Pattern         35] Golden answer:        5673, Your answer:        5856
+[ERROR] [Pattern         36] Golden answer:        5856, Your answer:        6039
+[ERROR] [Pattern         37] Golden answer:        6039, Your answer:        6222
+[ERROR] [Pattern         38] Golden answer:        6222, Your answer:        6405
+[ERROR] [Pattern         39] Golden answer:        6405, Your answer:        6588
+[ERROR] [Pattern         40] Golden answer:        6588, Your answer:        6771
+[ERROR] [Pattern         41] Golden answer:        6771, Your answer:        6954
+[ERROR] [Pattern         42] Golden answer:        6954, Your answer:        7137
+[ERROR] [Pattern         43] Golden answer:        7137, Your answer:        7320
+[ERROR] [Pattern         44] Golden answer:        7320, Your answer:        7503
+[ERROR] [Pattern         45] Golden answer:        7503, Your answer:        7686
+[ERROR] [Pattern         46] Golden answer:        7686, Your answer:        7869
+[ERROR] [Pattern         47] Golden answer:        7869, Your answer:        8052
+[ERROR] [Pattern         48] Golden answer:        8052, Your answer:        8235
+[ERROR] [Pattern         49] Golden answer:        8235, Your answer:        8418
+[ERROR] [Pattern         50] Golden answer:        8418, Your answer:        8601
+[ERROR] [Pattern         51] Golden answer:        8601, Your answer:        8784
+[ERROR] [Pattern         52] Golden answer:        8784, Your answer:        8967
+[ERROR] [Pattern         53] Golden answer:        8967, Your answer:        9150
+[ERROR] [Pattern         54] Golden answer:        9150, Your answer:        9333
+[ERROR] [Pattern         55] Golden answer:        9333, Your answer:        9516
+[ERROR] [Pattern         56] Golden answer:        9516, Your answer:        9699
+[ERROR] [Pattern         57] Golden answer:        9699, Your answer:        9882
+[ERROR] [Pattern         58] Golden answer:        9882, Your answer:       10065
+[ERROR] [Pattern         59] Golden answer:       10065, Your answer:       10248
+[ERROR] [Pattern         60] Golden answer:       10248, Your answer:       10431
+[ERROR] [Pattern         61] Golden answer:       10431, Your answer:       10614
+[ERROR] [Pattern         62] Golden answer:       10614, Your answer:       10797
+[ERROR] [Pattern         63] Golden answer:       10797, Your answer:       10980
+[ERROR] [Pattern         64] Golden answer:       10980, Your answer:       11163
+[ERROR] [Pattern         65] Golden answer:       11163, Your answer:       11346
+[ERROR] [Pattern         66] Golden answer:       11346, Your answer:       11529
+[ERROR] [Pattern         67] Golden answer:       11529, Your answer:       11712
+[ERROR] [Pattern         68] Golden answer:       11712, Your answer:       11895
+[ERROR] [Pattern         69] Golden answer:       11895, Your answer:       12078
+[ERROR] [Pattern         70] Golden answer:       12078, Your answer:       12261
+[ERROR] [Pattern         71] Golden answer:       12261, Your answer:       12444
+[ERROR] [Pattern         72] Golden answer:       12444, Your answer:       12627
+[ERROR] [Pattern         73] Golden answer:       12627, Your answer:       12810
+[ERROR] [Pattern         74] Golden answer:       12810, Your answer:       12993
+[ERROR] [Pattern         75] Golden answer:       12993, Your answer:       13196
+[ERROR] [Pattern         76] Golden answer:       13196, Your answer:       13417
+[ERROR] [Pattern         77] Golden answer:       13417, Your answer:       13592
+[ERROR] [Pattern         78] Golden answer:       13592, Your answer:       13655
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fir_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 7654.113 ; gain = 59.242 ; free physical = 4241 ; free virtual = 8944
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  9 10:31:17 2023...

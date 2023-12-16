@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Oct 10 08:22:53 2023
+# Process ID: 2106
+# Current directory: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir
+# Command line: vivado
+# Log file: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/vivado.log
+# Journal file: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2295.690 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source fir_tb.tcl
+export_ip_user_files -of_objects  [get_files /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/shift_ram.v] -no_script -reset -force -quiet
+remove_files  /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/shift_ram.v
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

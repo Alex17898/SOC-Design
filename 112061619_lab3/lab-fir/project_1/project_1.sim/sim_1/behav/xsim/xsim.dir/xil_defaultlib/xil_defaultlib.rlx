@@ -1,0 +1,9 @@
+0.7
+2020.2
+Apr 18 2022
+15:53:03
+/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/bram11.v,1696941002,verilog,,/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/rtl/fir.v,,bram11,,,,,,,,
+/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/shift_ram.v,1696851170,verilog,,/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/tb/fir_tb.v,,shift_ram,,,,,,,,
+/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/rtl/fir.v,1697031349,verilog,,/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/tb/fir_tb.v,,fir,,,,,,,,
+/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/tb/fir_tb.v,1696957866,verilog,,,,fir_tb,,,,,,,,
+/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,

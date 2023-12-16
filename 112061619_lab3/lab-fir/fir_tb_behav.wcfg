@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fir_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fir_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,917.851 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,150.652 ns"></ZoomEndTime>
+      <Cursor1Time time="1,956.851 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="51" />
+   <wvobject type="logic" fp_name="/fir_tb/awready">
+      <obj_property name="ElementShortName">awready</obj_property>
+      <obj_property name="ObjectShortName">awready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/wready">
+      <obj_property name="ElementShortName">wready</obj_property>
+      <obj_property name="ObjectShortName">wready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/awvalid">
+      <obj_property name="ElementShortName">awvalid</obj_property>
+      <obj_property name="ObjectShortName">awvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/awaddr">
+      <obj_property name="ElementShortName">awaddr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">awaddr[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/wvalid">
+      <obj_property name="ElementShortName">wvalid</obj_property>
+      <obj_property name="ObjectShortName">wvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/wdata">
+      <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/arready">
+      <obj_property name="ElementShortName">arready</obj_property>
+      <obj_property name="ObjectShortName">arready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/rready">
+      <obj_property name="ElementShortName">rready</obj_property>
+      <obj_property name="ObjectShortName">rready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/arvalid">
+      <obj_property name="ElementShortName">arvalid</obj_property>
+      <obj_property name="ObjectShortName">arvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/araddr">
+      <obj_property name="ElementShortName">araddr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">araddr[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/rvalid">
+      <obj_property name="ElementShortName">rvalid</obj_property>
+      <obj_property name="ObjectShortName">rvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/rdata">
+      <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/axis_clk">
+      <obj_property name="ElementShortName">axis_clk</obj_property>
+      <obj_property name="ObjectShortName">axis_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/axis_rst_n">
+      <obj_property name="ElementShortName">axis_rst_n</obj_property>
+      <obj_property name="ObjectShortName">axis_rst_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/ss_tvalid">
+      <obj_property name="ElementShortName">ss_tvalid</obj_property>
+      <obj_property name="ObjectShortName">ss_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/ss_tdata">
+      <obj_property name="ElementShortName">ss_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ss_tdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/ss_tlast">
+      <obj_property name="ElementShortName">ss_tlast</obj_property>
+      <obj_property name="ObjectShortName">ss_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/ss_tready">
+      <obj_property name="ElementShortName">ss_tready</obj_property>
+      <obj_property name="ObjectShortName">ss_tready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/data_EN">
+      <obj_property name="ElementShortName">data_EN</obj_property>
+      <obj_property name="ObjectShortName">data_EN</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/data_Di">
+      <obj_property name="ElementShortName">data_Di[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_Di[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/data_WE">
+      <obj_property name="ElementShortName">data_WE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_WE[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/data_A">
+      <obj_property name="ElementShortName">data_A[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_A[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/data_Do">
+      <obj_property name="ElementShortName">data_Do[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_Do[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/tap_WE">
+      <obj_property name="ElementShortName">tap_WE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tap_WE[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/tap_EN">
+      <obj_property name="ElementShortName">tap_EN</obj_property>
+      <obj_property name="ObjectShortName">tap_EN</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/tap_Di">
+      <obj_property name="ElementShortName">tap_Di[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tap_Di[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/tap_A">
+      <obj_property name="ElementShortName">tap_A[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tap_A[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/tap_Do">
+      <obj_property name="ElementShortName">tap_Do[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tap_Do[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/sm_tready">
+      <obj_property name="ElementShortName">sm_tready</obj_property>
+      <obj_property name="ObjectShortName">sm_tready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/sm_tvalid">
+      <obj_property name="ElementShortName">sm_tvalid</obj_property>
+      <obj_property name="ObjectShortName">sm_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/sm_tdata">
+      <obj_property name="ElementShortName">sm_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sm_tdata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/sm_tlast">
+      <obj_property name="ElementShortName">sm_tlast</obj_property>
+      <obj_property name="ObjectShortName">sm_tlast</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/Din_list">
+      <obj_property name="ElementShortName">Din_list[0:599][31:0]</obj_property>
+      <obj_property name="ObjectShortName">Din_list[0:599][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/golden_list">
+      <obj_property name="ElementShortName">golden_list[0:599][31:0]</obj_property>
+      <obj_property name="ObjectShortName">golden_list[0:599][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/error_coef">
+      <obj_property name="ElementShortName">error_coef</obj_property>
+      <obj_property name="ObjectShortName">error_coef</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/data_length">
+      <obj_property name="ElementShortName">data_length[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_length[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/Din">
+      <obj_property name="ElementShortName">Din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Din[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/golden">
+      <obj_property name="ElementShortName">golden[31:0]</obj_property>
+      <obj_property name="ObjectShortName">golden[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/input_data">
+      <obj_property name="ElementShortName">input_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/golden_data">
+      <obj_property name="ElementShortName">golden_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">golden_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/m">
+      <obj_property name="ElementShortName">m[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/k">
+      <obj_property name="ElementShortName">k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/error">
+      <obj_property name="ElementShortName">error</obj_property>
+      <obj_property name="ObjectShortName">error</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fir_tb/status_error">
+      <obj_property name="ElementShortName">status_error</obj_property>
+      <obj_property name="ObjectShortName">status_error</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/timeout">
+      <obj_property name="ElementShortName">timeout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timeout[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/coef">
+      <obj_property name="ElementShortName">coef[0:10][31:0]</obj_property>
+      <obj_property name="ObjectShortName">coef[0:10][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/pADDR_WIDTH">
+      <obj_property name="ElementShortName">pADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/pDATA_WIDTH">
+      <obj_property name="ElementShortName">pDATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pDATA_WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/Tape_Num">
+      <obj_property name="ElementShortName">Tape_Num[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Tape_Num[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fir_tb/Data_Num">
+      <obj_property name="ElementShortName">Data_Num[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_Num[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

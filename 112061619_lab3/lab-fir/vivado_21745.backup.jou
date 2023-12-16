@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Oct  9 10:40:01 2023
+# Process ID: 21745
+# Current directory: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir
+# Command line: vivado
+# Log file: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/vivado.log
+# Journal file: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2295.688 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/tb/fir_tb.v] -no_script -reset -force -quiet
+remove_files  /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/tb/fir_tb.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/bram11.v] -no_script -reset -force -quiet
+remove_files  /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/bram11.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/rtl/fir.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/shift_ram.v] -no_script -reset -force -quiet
+remove_files  {/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/rtl/fir.v /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/shift_ram.v}
+add_files -norecurse {/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/rtl/fir.v /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/bram11.v /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/tb/fir_tb.v /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/bram/shift_ram.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source fir_tb.tcl
+close_sim
+launch_simulation
+source fir_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source fir_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

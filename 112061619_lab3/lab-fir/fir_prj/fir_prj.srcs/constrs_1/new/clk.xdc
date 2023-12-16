@@ -1,0 +1,1 @@
+create_clock -period 14.85 [get_ports axis_clk]

@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 11 06:23:14 2023
+# Process ID: 42573
+# Current directory: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir
+# Command line: vivado
+# Log file: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/vivado.log
+# Journal file: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2295.690 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type functional
+open_wave_config /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_tb_behav.wcfg
+source fir_tb.tcl
+launch_simulation -mode post-synthesis -type timing
+launch_simulation
+open_wave_config /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_tb_behav.wcfg
+source fir_tb.tcl
+close_sim
+close_sim
+close_project
+open_project /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj/fir_prj.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+file mkdir /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj/fir_prj.srcs/constrs_1
+file mkdir /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj/fir_prj.srcs/constrs_1/new
+close [ open /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj/fir_prj.srcs/constrs_1/new/clk.xdc w ]
+add_files -fileset constrs_1 /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj/fir_prj.srcs/constrs_1/new/clk.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1(1)
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+report_timing_summary -delay_type max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1(1) -file /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj/timing_report.txt
+close_design
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 -file /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj/timing_report.txt
+close_project
+open_project /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_tb_behav.wcfg
+source fir_tb.tcl
+relaunch_sim
+save_wave_config {/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_tb_behav.wcfg}
+close_sim
+close_project
+open_project /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj/fir_prj.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 -file /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj/timing_report.txt
+report_timing_summary -delay_type max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1(1) -file /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj/timing_report.txt

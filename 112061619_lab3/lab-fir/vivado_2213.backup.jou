@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 11 00:47:35 2023
+# Process ID: 2213
+# Current directory: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir
+# Command line: vivado
+# Log file: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/vivado.log
+# Journal file: /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2295.690 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source fir_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_bp {/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/rtl/fir.v} 226
+remove_bps -file {/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/rtl/fir.v} -line 226
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+set_property -name {xsim.simulate.runtime} -value {100000ns} -objects [get_filesets sim_1]
+relaunch_sim
+close_sim
+launch_simulation
+source fir_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_tb_behav.wcfg
+set_property xsim.view /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_tb_behav.wcfg [get_filesets sim_1]
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+close_project
+create_project fir_prj /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir_prj -part xc7z020clg400-1
+add_files -norecurse /home/ubuntu/caravel-soc_fpga-lab-main/lab-fir/fir/rtl/fir.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1

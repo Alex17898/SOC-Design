@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Oct 12 00:04:48 2023
+# Process ID: 24252
+# Current directory: D:/SOC/Lab/lab-fir/fir_prj/fir_prj.srcs/utils_1/imports/synth_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22512 D:\SOC\Lab\lab-fir\fir_prj\fir_prj.srcs\utils_1\imports\synth_1\fir.dcp
+# Log file: D:/SOC/Lab/lab-fir/fir_prj/fir_prj.srcs/utils_1/imports/synth_1/vivado.log
+# Journal file: D:/SOC/Lab/lab-fir/fir_prj/fir_prj.srcs/utils_1/imports/synth_1\vivado.jou
+# Running On: LAPTOP-4TN2N2PV, OS: Windows, CPU Frequency: 2296 MHz, CPU Physical cores: 8, Host memory: 16575 MB
+#-----------------------------------------------------------
+start_gui
+open_checkpoint D:/SOC/Lab/lab-fir/fir_prj/fir_prj.srcs/utils_1/imports/synth_1/fir.dcp
