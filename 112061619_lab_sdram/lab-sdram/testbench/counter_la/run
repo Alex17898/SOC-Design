@@ -1,0 +1,9 @@
+
+# to fix flash base address
+sed -ie 's/@10/@00/g' matmul.hex
+
+iverilog -Ttyp -DFUNCTIONAL -DSIM -DUNIT_DELAY=#1 \
+	-f./include.rtl.list -o matmul.vvp counter_la_tb.v
+
+vvp matmul.vvp
+rm -f matmul.vvp matmul.elf matmul.hexe
