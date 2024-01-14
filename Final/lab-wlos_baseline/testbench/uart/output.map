@@ -20,7 +20,7 @@ Linker script and memory map
 
                 0x0000000000000000                __DYNAMIC = 0x0
 
-.text           0x0000000010000000      0xab4
+.text           0x0000000010000000      0xadc
                 0x0000000010000000                _ftext = .
  *crt0*(.text)
  .text          0x0000000010000000      0x148 uart.elf-crt0_vex.o
@@ -32,30 +32,30 @@ Linker script and memory map
  .text          0x0000000010000148      0x15c uart.elf-isr.o
                 0x0000000010000238                isr
  .text          0x00000000100002a4       0x38 uart.elf-uart.o
- .text          0x00000000100002dc      0x7d8 uart.elf-counter_la_uart.o
+ .text          0x00000000100002dc      0x800 uart.elf-counter_la_uart.o
                 0x00000000100003cc                main
- .text          0x0000000010000ab4        0x0 uart.elf-fir.o
- .text          0x0000000010000ab4        0x0 uart.elf-matmul.o
- .text          0x0000000010000ab4        0x0 uart.elf-qsort.o
+ .text          0x0000000010000adc        0x0 uart.elf-fir.o
+ .text          0x0000000010000adc        0x0 uart.elf-matmul.o
+ .text          0x0000000010000adc        0x0 uart.elf-qsort.o
 
-.mprj           0x0000000010000ab4      0x1bc
- .mprj          0x0000000010000ab4      0x1bc uart.elf-uart.o
-                0x0000000010000ab4                uart_write
-                0x0000000010000ae4                uart_write_char
-                0x0000000010000b34                uart_write_string
-                0x0000000010000b88                uart_read_char
-                0x0000000010000bfc                uart_read
+.mprj           0x0000000010000adc      0x1bc
+ .mprj          0x0000000010000adc      0x1bc uart.elf-uart.o
+                0x0000000010000adc                uart_write
+                0x0000000010000b0c                uart_write_char
+                0x0000000010000b5c                uart_write_string
+                0x0000000010000bb0                uart_read_char
+                0x0000000010000c24                uart_read
 
-.rodata         0x0000000010000c70        0x0
-                0x0000000010000c70                . = ALIGN (0x8)
- *fill*         0x0000000010000c70        0x0 
-                0x0000000010000c70                _frodata = .
+.rodata         0x0000000010000c98        0x0
+                0x0000000010000c98                . = ALIGN (0x8)
+ *fill*         0x0000000010000c98        0x0 
+                0x0000000010000c98                _frodata = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  *(.rodata1)
-                0x0000000010000c70                . = ALIGN (0x8)
-                0x0000000010000c70                _erodata = .
+                0x0000000010000c98                . = ALIGN (0x8)
+                0x0000000010000c98                _erodata = .
 
-.data           0x0000000000000000      0x108 load address 0x0000000010000c70
+.data           0x0000000000000000      0x108 load address 0x0000000010000c98
                 0x0000000000000000                . = ALIGN (0x8)
                 0x0000000000000000                _fdata = .
  *(.data .data.* .gnu.linkonce.d.*)
@@ -81,7 +81,7 @@ Linker script and memory map
  *fill*         0x0000000000000104        0x4 
                 0x0000000000000108                _edata = .
 
-.bss            0x0000000000000108       0x98 load address 0x0000000010000d78
+.bss            0x0000000000000108       0x98 load address 0x0000000010000da0
                 0x0000000000000108                . = ALIGN (0x8)
                 0x0000000000000108                _fbss = .
  *(.dynsbss)
@@ -105,7 +105,7 @@ Linker script and memory map
                 0x00000000000001a0                _ebss = .
                 0x00000000000001a0                _end = .
 
-.mprjram        0x0000000038000000      0x53c load address 0x0000000010000d78
+.mprjram        0x0000000038000000      0x53c load address 0x0000000010000da0
                 0x0000000038000000                . = ALIGN (0x8)
                 0x0000000038000000                _fsram = .
  *libgcc.a:*(.text .text.*)
@@ -122,10 +122,10 @@ Linker script and memory map
                 0x0000000038000498                sort
                 0x0000000038000508                qsort
                 0x0000000000000600                PROVIDE (_fstack = (ORIGIN (dff2) + LENGTH (dff2)))
-                0x0000000010000c70                PROVIDE (_fdata_rom = LOADADDR (.data))
+                0x0000000010000c98                PROVIDE (_fdata_rom = LOADADDR (.data))
                 [!provide]                        PROVIDE (_edata_rom = (LOADADDR (.data) + SIZEOF (.data)))
                 0x000000003800053c                PROVIDE (_esram = (ORIGIN (mprjram) + SIZEOF (.mprjram)))
-                0x0000000010000d78                PROVIDE (_esram_rom = LOADADDR (.mprjram))
+                0x0000000010000da0                PROVIDE (_esram_rom = LOADADDR (.mprjram))
 LOAD uart.elf-crt0_vex.o
 LOAD uart.elf-isr.o
 LOAD uart.elf-uart.o
@@ -141,7 +141,7 @@ END GROUP
 LOAD /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a
 OUTPUT(uart.elf elf32-littleriscv)
 
-.rela.dyn       0x000000003800053c        0x0 load address 0x00000000100012b4
+.rela.dyn       0x000000003800053c        0x0 load address 0x00000000100012dc
  .rela.text     0x000000003800053c        0x0 uart.elf-crt0_vex.o
 
 .riscv.attributes
@@ -172,15 +172,15 @@ OUTPUT(uart.elf elf32-littleriscv)
  .comment       0x000000000000001b       0x1c uart.elf-matmul.o
  .comment       0x000000000000001b       0x1c uart.elf-qsort.o
 
-.debug_line     0x0000000000000000     0x131b
+.debug_line     0x0000000000000000     0x134f
  .debug_line    0x0000000000000000      0x20a uart.elf-crt0_vex.o
  .debug_line    0x000000000000020a      0x151 uart.elf-isr.o
  .debug_line    0x000000000000035b      0x21e uart.elf-uart.o
- .debug_line    0x0000000000000579      0x895 uart.elf-counter_la_uart.o
- .debug_line    0x0000000000000e0e      0x1bf uart.elf-fir.o
- .debug_line    0x0000000000000fcd      0x16f uart.elf-matmul.o
- .debug_line    0x000000000000113c      0x165 uart.elf-qsort.o
- .debug_line    0x00000000000012a1       0x7a /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
+ .debug_line    0x0000000000000579      0x8c9 uart.elf-counter_la_uart.o
+ .debug_line    0x0000000000000e42      0x1bf uart.elf-fir.o
+ .debug_line    0x0000000000001001      0x16f uart.elf-matmul.o
+ .debug_line    0x0000000000001170      0x165 uart.elf-qsort.o
+ .debug_line    0x00000000000012d5       0x7a /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
 
 .debug_line_str
                 0x0000000000000000      0x1ce
@@ -207,25 +207,25 @@ OUTPUT(uart.elf elf32-littleriscv)
  .debug_line_str
                 0x000000000000013a       0x94 /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
 
-.debug_info     0x0000000000000000      0x88b
+.debug_info     0x0000000000000000      0x8b0
  .debug_info    0x0000000000000000       0x25 uart.elf-crt0_vex.o
  .debug_info    0x0000000000000025      0x1a3 uart.elf-isr.o
  .debug_info    0x00000000000001c8      0x18c uart.elf-uart.o
- .debug_info    0x0000000000000354      0x1c5 uart.elf-counter_la_uart.o
- .debug_info    0x0000000000000519      0x14a uart.elf-fir.o
- .debug_info    0x0000000000000663       0xdc uart.elf-matmul.o
- .debug_info    0x000000000000073f      0x11d uart.elf-qsort.o
- .debug_info    0x000000000000085c       0x2f /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
+ .debug_info    0x0000000000000354      0x1ea uart.elf-counter_la_uart.o
+ .debug_info    0x000000000000053e      0x14a uart.elf-fir.o
+ .debug_info    0x0000000000000688       0xdc uart.elf-matmul.o
+ .debug_info    0x0000000000000764      0x11d uart.elf-qsort.o
+ .debug_info    0x0000000000000881       0x2f /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
 
-.debug_abbrev   0x0000000000000000      0x616
+.debug_abbrev   0x0000000000000000      0x643
  .debug_abbrev  0x0000000000000000       0x14 uart.elf-crt0_vex.o
  .debug_abbrev  0x0000000000000014      0x131 uart.elf-isr.o
  .debug_abbrev  0x0000000000000145       0xe3 uart.elf-uart.o
- .debug_abbrev  0x0000000000000228      0x139 uart.elf-counter_la_uart.o
- .debug_abbrev  0x0000000000000361       0xf2 uart.elf-fir.o
- .debug_abbrev  0x0000000000000453       0xbb uart.elf-matmul.o
- .debug_abbrev  0x000000000000050e       0xe7 uart.elf-qsort.o
- .debug_abbrev  0x00000000000005f5       0x21 /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
+ .debug_abbrev  0x0000000000000228      0x166 uart.elf-counter_la_uart.o
+ .debug_abbrev  0x000000000000038e       0xf2 uart.elf-fir.o
+ .debug_abbrev  0x0000000000000480       0xbb uart.elf-matmul.o
+ .debug_abbrev  0x000000000000053b       0xe7 uart.elf-qsort.o
+ .debug_abbrev  0x0000000000000622       0x21 /opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/libgcc.a(muldi3.o)
 
 .debug_aranges  0x0000000000000000      0x148
  .debug_aranges
@@ -252,7 +252,7 @@ OUTPUT(uart.elf elf32-littleriscv)
  .debug_str     0x00000000000001b3       0x31 uart.elf-uart.o
                                         0x151 (size before relaxing)
  .debug_str     0x00000000000001e4       0x48 uart.elf-counter_la_uart.o
-                                        0x170 (size before relaxing)
+                                        0x17b (size before relaxing)
  .debug_str     0x000000000000022c       0x55 uart.elf-fir.o
                                          0xb9 (size before relaxing)
  .debug_str     0x0000000000000281        0xd uart.elf-matmul.o

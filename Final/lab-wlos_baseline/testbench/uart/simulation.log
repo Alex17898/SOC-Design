@@ -3,25 +3,448 @@ uart.hex loaded into memory
 Memory 5 bytes = 0x6f 0x00 0x00 0x0b 0x13
 VCD info: dumpfile uart.vcd opened for output.
 LA Test 1 started
-tx data bit index 0: 1
-tx data bit index 1: 0
-tx data bit index 2: 1
-tx data bit index 3: 1
-tx data bit index 4: 1
-tx data bit index 5: 1
-tx data bit index 6: 0
-tx data bit index 7: 0
-tx complete 2
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word   0
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word   1
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word   2
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word   3
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word   4
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word   5
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word   6
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word   7
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word   8
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word   9
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  10
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  11
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  12
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  13
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  14
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  15
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  16
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 0
+fir passed
+rx data bit index 3: 0
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  17
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  18
+rx data bit index 0: 1
+rx data bit index 1: 1
+matmul passed
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  19
+rx data bit index 0: 0
+rx data bit index 1: 0
+qsort passed
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  20
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  21
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  22
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  23
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  24
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  25
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  26
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  27
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  28
 rx data bit index 0: 1
 rx data bit index 1: 0
 rx data bit index 2: 1
 rx data bit index 3: 1
 rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  29
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  30
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 1
+rx data bit index 5: 0
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  31
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 0
 rx data bit index 5: 1
 rx data bit index 6: 0
 rx data bit index 7: 0
-recevied word  61
-fir passed
-matmul passed
-qsort passed
+recevied word  32
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  33
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  34
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  35
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  36
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  37
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  38
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 0
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  39
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  40
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  41
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  42
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 0
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  43
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  44
+rx data bit index 0: 1
+rx data bit index 1: 0
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  45
+rx data bit index 0: 0
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  46
+rx data bit index 0: 1
+rx data bit index 1: 1
+rx data bit index 2: 1
+rx data bit index 3: 1
+rx data bit index 4: 0
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  47
+rx data bit index 0: 0
+rx data bit index 1: 0
+rx data bit index 2: 0
+rx data bit index 3: 0
+rx data bit index 4: 1
+rx data bit index 5: 1
+rx data bit index 6: 0
+rx data bit index 7: 0
+recevied word  48
 LA Test 1 passed

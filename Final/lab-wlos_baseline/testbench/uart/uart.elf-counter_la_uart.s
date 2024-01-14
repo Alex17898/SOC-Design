@@ -191,13 +191,13 @@ main:
 	.file 5 "counter_la_uart.c"
 	.loc 5 47 1
 	.cfi_startproc
-	addi	sp,sp,-32
-	.cfi_def_cfa_offset 32
-	sw	ra,28(sp)
-	sw	s0,24(sp)
+	addi	sp,sp,-48
+	.cfi_def_cfa_offset 48
+	sw	ra,44(sp)
+	sw	s0,40(sp)
 	.cfi_offset 1, -4
 	.cfi_offset 8, -8
-	addi	s0,sp,32
+	addi	s0,sp,48
 	.cfi_def_cfa 8, 0
 	.loc 5 77 6
 	li	a5,-268419072
@@ -507,37 +507,32 @@ main:
 	addi	a4,a4,24
 	.loc 5 133 56
 	sw	a5,0(a4)
-	.loc 5 145 14
+.LBB2:
+	.loc 5 143 10
+	sw	zero,-20(s0)
+	.loc 5 143 2
+	j	.L10
+.L11:
+	.loc 5 144 4 discriminator 3
+	lw	a0,-20(s0)
+	call	uart_write
+	.loc 5 143 27 discriminator 3
+	lw	a5,-20(s0)
+	addi	a5,a5,1
+	sw	a5,-20(s0)
+.L10:
+	.loc 5 143 19 discriminator 1
+	lw	a4,-20(s0)
+	li	a5,99
+	ble	a4,a5,.L11
+.LBE2:
+	.loc 5 147 14
 	call	fir
-	sw	a0,-20(s0)
-	.loc 5 146 38
-	lw	a5,-20(s0)
-	lw	a5,0(a5)
-	.loc 5 146 44
-	slli	a4,a5,16
-	.loc 5 146 3
-	li	a5,637534208
-	addi	a5,a5,12
-	.loc 5 146 36
-	sw	a4,0(a5)
-	.loc 5 147 44
-	lw	a5,-20(s0)
-	addi	a5,a5,4
-	.loc 5 147 38
-	lw	a5,0(a5)
-	.loc 5 147 48
-	slli	a4,a5,16
-	.loc 5 147 3
-	li	a5,637534208
-	addi	a5,a5,12
-	.loc 5 147 36
-	sw	a4,0(a5)
-	.loc 5 148 44
-	lw	a5,-20(s0)
-	addi	a5,a5,8
+	sw	a0,-24(s0)
 	.loc 5 148 38
+	lw	a5,-24(s0)
 	lw	a5,0(a5)
-	.loc 5 148 48
+	.loc 5 148 44
 	slli	a4,a5,16
 	.loc 5 148 3
 	li	a5,637534208
@@ -545,8 +540,8 @@ main:
 	.loc 5 148 36
 	sw	a4,0(a5)
 	.loc 5 149 44
-	lw	a5,-20(s0)
-	addi	a5,a5,12
+	lw	a5,-24(s0)
+	addi	a5,a5,4
 	.loc 5 149 38
 	lw	a5,0(a5)
 	.loc 5 149 48
@@ -557,8 +552,8 @@ main:
 	.loc 5 149 36
 	sw	a4,0(a5)
 	.loc 5 150 44
-	lw	a5,-20(s0)
-	addi	a5,a5,16
+	lw	a5,-24(s0)
+	addi	a5,a5,8
 	.loc 5 150 38
 	lw	a5,0(a5)
 	.loc 5 150 48
@@ -569,8 +564,8 @@ main:
 	.loc 5 150 36
 	sw	a4,0(a5)
 	.loc 5 151 44
-	lw	a5,-20(s0)
-	addi	a5,a5,20
+	lw	a5,-24(s0)
+	addi	a5,a5,12
 	.loc 5 151 38
 	lw	a5,0(a5)
 	.loc 5 151 48
@@ -581,8 +576,8 @@ main:
 	.loc 5 151 36
 	sw	a4,0(a5)
 	.loc 5 152 44
-	lw	a5,-20(s0)
-	addi	a5,a5,24
+	lw	a5,-24(s0)
+	addi	a5,a5,16
 	.loc 5 152 38
 	lw	a5,0(a5)
 	.loc 5 152 48
@@ -593,8 +588,8 @@ main:
 	.loc 5 152 36
 	sw	a4,0(a5)
 	.loc 5 153 44
-	lw	a5,-20(s0)
-	addi	a5,a5,28
+	lw	a5,-24(s0)
+	addi	a5,a5,20
 	.loc 5 153 38
 	lw	a5,0(a5)
 	.loc 5 153 48
@@ -605,8 +600,8 @@ main:
 	.loc 5 153 36
 	sw	a4,0(a5)
 	.loc 5 154 44
-	lw	a5,-20(s0)
-	addi	a5,a5,32
+	lw	a5,-24(s0)
+	addi	a5,a5,24
 	.loc 5 154 38
 	lw	a5,0(a5)
 	.loc 5 154 48
@@ -617,8 +612,8 @@ main:
 	.loc 5 154 36
 	sw	a4,0(a5)
 	.loc 5 155 44
-	lw	a5,-20(s0)
-	addi	a5,a5,36
+	lw	a5,-24(s0)
+	addi	a5,a5,28
 	.loc 5 155 38
 	lw	a5,0(a5)
 	.loc 5 155 48
@@ -629,54 +624,54 @@ main:
 	.loc 5 155 36
 	sw	a4,0(a5)
 	.loc 5 156 44
-	lw	a5,-20(s0)
-	addi	a5,a5,40
+	lw	a5,-24(s0)
+	addi	a5,a5,32
 	.loc 5 156 38
 	lw	a5,0(a5)
-	.loc 5 156 49
+	.loc 5 156 48
 	slli	a4,a5,16
 	.loc 5 156 3
 	li	a5,637534208
 	addi	a5,a5,12
 	.loc 5 156 36
 	sw	a4,0(a5)
+	.loc 5 157 44
+	lw	a5,-24(s0)
+	addi	a5,a5,36
+	.loc 5 157 38
+	lw	a5,0(a5)
+	.loc 5 157 48
+	slli	a4,a5,16
 	.loc 5 157 3
 	li	a5,637534208
 	addi	a5,a5,12
 	.loc 5 157 36
+	sw	a4,0(a5)
+	.loc 5 158 44
+	lw	a5,-24(s0)
+	addi	a5,a5,40
+	.loc 5 158 38
+	lw	a5,0(a5)
+	.loc 5 158 49
+	slli	a4,a5,16
+	.loc 5 158 3
+	li	a5,637534208
+	addi	a5,a5,12
+	.loc 5 158 36
+	sw	a4,0(a5)
+	.loc 5 159 3
+	li	a5,637534208
+	addi	a5,a5,12
+	.loc 5 159 36
 	li	a4,-1421803520
 	sw	a4,0(a5)
-	.loc 5 159 14
+	.loc 5 161 14
 	call	matmul
-	sw	a0,-24(s0)
-	.loc 5 160 38
-	lw	a5,-24(s0)
-	lw	a5,0(a5)
-	.loc 5 160 44
-	slli	a4,a5,16
-	.loc 5 160 3
-	li	a5,637534208
-	addi	a5,a5,12
-	.loc 5 160 36
-	sw	a4,0(a5)
-	.loc 5 161 44
-	lw	a5,-24(s0)
-	addi	a5,a5,4
-	.loc 5 161 38
-	lw	a5,0(a5)
-	.loc 5 161 48
-	slli	a4,a5,16
-	.loc 5 161 3
-	li	a5,637534208
-	addi	a5,a5,12
-	.loc 5 161 36
-	sw	a4,0(a5)
-	.loc 5 162 44
-	lw	a5,-24(s0)
-	addi	a5,a5,8
+	sw	a0,-28(s0)
 	.loc 5 162 38
+	lw	a5,-28(s0)
 	lw	a5,0(a5)
-	.loc 5 162 48
+	.loc 5 162 44
 	slli	a4,a5,16
 	.loc 5 162 3
 	li	a5,637534208
@@ -684,8 +679,8 @@ main:
 	.loc 5 162 36
 	sw	a4,0(a5)
 	.loc 5 163 44
-	lw	a5,-24(s0)
-	addi	a5,a5,12
+	lw	a5,-28(s0)
+	addi	a5,a5,4
 	.loc 5 163 38
 	lw	a5,0(a5)
 	.loc 5 163 48
@@ -696,8 +691,8 @@ main:
 	.loc 5 163 36
 	sw	a4,0(a5)
 	.loc 5 164 44
-	lw	a5,-24(s0)
-	addi	a5,a5,36
+	lw	a5,-28(s0)
+	addi	a5,a5,8
 	.loc 5 164 38
 	lw	a5,0(a5)
 	.loc 5 164 48
@@ -707,43 +702,43 @@ main:
 	addi	a5,a5,12
 	.loc 5 164 36
 	sw	a4,0(a5)
+	.loc 5 165 44
+	lw	a5,-28(s0)
+	addi	a5,a5,12
+	.loc 5 165 38
+	lw	a5,0(a5)
+	.loc 5 165 48
+	slli	a4,a5,16
 	.loc 5 165 3
 	li	a5,637534208
 	addi	a5,a5,12
 	.loc 5 165 36
+	sw	a4,0(a5)
+	.loc 5 166 44
+	lw	a5,-28(s0)
+	addi	a5,a5,36
+	.loc 5 166 38
+	lw	a5,0(a5)
+	.loc 5 166 48
+	slli	a4,a5,16
+	.loc 5 166 3
+	li	a5,637534208
+	addi	a5,a5,12
+	.loc 5 166 36
+	sw	a4,0(a5)
+	.loc 5 167 3
+	li	a5,637534208
+	addi	a5,a5,12
+	.loc 5 167 36
 	li	a4,-1421737984
 	sw	a4,0(a5)
-	.loc 5 167 14
+	.loc 5 169 14
 	call	qsort
-	sw	a0,-28(s0)
-	.loc 5 168 38
-	lw	a5,-28(s0)
-	lw	a5,0(a5)
-	.loc 5 168 44
-	slli	a4,a5,16
-	.loc 5 168 3
-	li	a5,637534208
-	addi	a5,a5,12
-	.loc 5 168 36
-	sw	a4,0(a5)
-	.loc 5 169 44
-	lw	a5,-28(s0)
-	addi	a5,a5,4
-	.loc 5 169 38
-	lw	a5,0(a5)
-	.loc 5 169 48
-	slli	a4,a5,16
-	.loc 5 169 3
-	li	a5,637534208
-	addi	a5,a5,12
-	.loc 5 169 36
-	sw	a4,0(a5)
-	.loc 5 170 44
-	lw	a5,-28(s0)
-	addi	a5,a5,8
+	sw	a0,-32(s0)
 	.loc 5 170 38
+	lw	a5,-32(s0)
 	lw	a5,0(a5)
-	.loc 5 170 48
+	.loc 5 170 44
 	slli	a4,a5,16
 	.loc 5 170 3
 	li	a5,637534208
@@ -751,8 +746,8 @@ main:
 	.loc 5 170 36
 	sw	a4,0(a5)
 	.loc 5 171 44
-	lw	a5,-28(s0)
-	addi	a5,a5,12
+	lw	a5,-32(s0)
+	addi	a5,a5,4
 	.loc 5 171 38
 	lw	a5,0(a5)
 	.loc 5 171 48
@@ -763,8 +758,8 @@ main:
 	.loc 5 171 36
 	sw	a4,0(a5)
 	.loc 5 172 44
-	lw	a5,-28(s0)
-	addi	a5,a5,16
+	lw	a5,-32(s0)
+	addi	a5,a5,8
 	.loc 5 172 38
 	lw	a5,0(a5)
 	.loc 5 172 48
@@ -775,8 +770,8 @@ main:
 	.loc 5 172 36
 	sw	a4,0(a5)
 	.loc 5 173 44
-	lw	a5,-28(s0)
-	addi	a5,a5,20
+	lw	a5,-32(s0)
+	addi	a5,a5,12
 	.loc 5 173 38
 	lw	a5,0(a5)
 	.loc 5 173 48
@@ -787,8 +782,8 @@ main:
 	.loc 5 173 36
 	sw	a4,0(a5)
 	.loc 5 174 44
-	lw	a5,-28(s0)
-	addi	a5,a5,24
+	lw	a5,-32(s0)
+	addi	a5,a5,16
 	.loc 5 174 38
 	lw	a5,0(a5)
 	.loc 5 174 48
@@ -799,8 +794,8 @@ main:
 	.loc 5 174 36
 	sw	a4,0(a5)
 	.loc 5 175 44
-	lw	a5,-28(s0)
-	addi	a5,a5,28
+	lw	a5,-32(s0)
+	addi	a5,a5,20
 	.loc 5 175 38
 	lw	a5,0(a5)
 	.loc 5 175 48
@@ -811,8 +806,8 @@ main:
 	.loc 5 175 36
 	sw	a4,0(a5)
 	.loc 5 176 44
-	lw	a5,-28(s0)
-	addi	a5,a5,32
+	lw	a5,-32(s0)
+	addi	a5,a5,24
 	.loc 5 176 38
 	lw	a5,0(a5)
 	.loc 5 176 48
@@ -823,8 +818,8 @@ main:
 	.loc 5 176 36
 	sw	a4,0(a5)
 	.loc 5 177 44
-	lw	a5,-28(s0)
-	addi	a5,a5,36
+	lw	a5,-32(s0)
+	addi	a5,a5,28
 	.loc 5 177 38
 	lw	a5,0(a5)
 	.loc 5 177 48
@@ -834,52 +829,76 @@ main:
 	addi	a5,a5,12
 	.loc 5 177 36
 	sw	a4,0(a5)
-	.loc 5 178 38
-	lw	a5,-28(s0)
-	lw	a5,0(a5)
 	.loc 5 178 44
+	lw	a5,-32(s0)
+	addi	a5,a5,32
+	.loc 5 178 38
+	lw	a5,0(a5)
+	.loc 5 178 48
 	slli	a4,a5,16
 	.loc 5 178 3
 	li	a5,637534208
 	addi	a5,a5,12
 	.loc 5 178 36
 	sw	a4,0(a5)
+	.loc 5 179 44
+	lw	a5,-32(s0)
+	addi	a5,a5,36
+	.loc 5 179 38
+	lw	a5,0(a5)
+	.loc 5 179 48
+	slli	a4,a5,16
 	.loc 5 179 3
 	li	a5,637534208
 	addi	a5,a5,12
 	.loc 5 179 36
-	li	a4,-1421672448
 	sw	a4,0(a5)
-	.loc 5 193 3
+	.loc 5 180 38
+	lw	a5,-32(s0)
+	lw	a5,0(a5)
+	.loc 5 180 44
+	slli	a4,a5,16
+	.loc 5 180 3
 	li	a5,637534208
 	addi	a5,a5,12
-	.loc 5 193 36
+	.loc 5 180 36
+	sw	a4,0(a5)
+	.loc 5 181 3
+	li	a5,637534208
+	addi	a5,a5,12
+	.loc 5 181 36
+	li	a4,-1421672448
+	sw	a4,0(a5)
+	.loc 5 195 3
+	li	a5,637534208
+	addi	a5,a5,12
+	.loc 5 195 36
 	li	a4,-1420754944
 	sw	a4,0(a5)
-	.loc 5 197 9
+	.loc 5 199 9
 	call	irq_getmask
 	mv	a5,a0
-	.loc 5 197 7
-	sw	a5,-32(s0)
-	.loc 5 198 7
-	lw	a5,-32(s0)
+	.loc 5 199 7
+	sw	a5,-36(s0)
+	.loc 5 200 7
+	lw	a5,-36(s0)
 	ori	a5,a5,4
-	sw	a5,-32(s0)
-	.loc 5 199 2
-	lw	a5,-32(s0)
+	sw	a5,-36(s0)
+	.loc 5 201 2
+	lw	a5,-36(s0)
 	mv	a0,a5
 	call	irq_setmask
-	.loc 5 201 2
+	.loc 5 203 2
 	li	a0,1
 	call	user_irq_0_ev_enable_write
-	.loc 5 203 1
+	.loc 5 205 1
 	nop
-	lw	ra,28(sp)
+	lw	ra,44(sp)
 	.cfi_restore 1
-	lw	s0,24(sp)
+	lw	s0,40(sp)
 	.cfi_restore 8
-	.cfi_def_cfa 2, 32
-	addi	sp,sp,32
+	.cfi_def_cfa 2, 48
+	addi	sp,sp,48
 	.cfi_def_cfa_offset 0
 	jr	ra
 	.cfi_endproc
@@ -889,7 +908,7 @@ main:
 	.file 6 "/opt/riscv/lib/gcc/riscv32-unknown-elf/12.1.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x1c1
+	.4byte	0x1e6
 	.2byte	0x5
 	.byte	0x1
 	.byte	0x4
@@ -977,13 +996,21 @@ main:
 	.byte	0xd
 	.4byte	.LASF24
 	.byte	0x5
+	.byte	0x1a
+	.byte	0xd
+	.4byte	0xbe
+	.byte	0x3
+	.byte	0
+	.byte	0xe
+	.4byte	.LASF25
+	.byte	0x5
 	.byte	0x2e
 	.byte	0x6
 	.4byte	.LFB321
 	.4byte	.LFE321-.LFB321
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x103
+	.4byte	0x128
 	.byte	0x2
 	.4byte	.LASF13
 	.byte	0x5
@@ -992,34 +1019,47 @@ main:
 	.4byte	0x6a
 	.byte	0x2
 	.byte	0x91
-	.byte	0x60
+	.byte	0x5c
 	.byte	0x2
 	.4byte	.LASF14
 	.byte	0x5
-	.byte	0x91
-	.byte	0x7
-	.4byte	0x88
-	.byte	0x2
-	.byte	0x91
-	.byte	0x6c
-	.byte	0x2
-	.4byte	.LASF15
-	.byte	0x5
-	.byte	0x9f
+	.byte	0x93
 	.byte	0x7
 	.4byte	0x88
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
 	.byte	0x2
-	.4byte	.LASF16
+	.4byte	.LASF15
 	.byte	0x5
-	.byte	0xa7
+	.byte	0xa1
 	.byte	0x7
 	.4byte	0x88
 	.byte	0x2
 	.byte	0x91
 	.byte	0x64
+	.byte	0x2
+	.4byte	.LASF16
+	.byte	0x5
+	.byte	0xa9
+	.byte	0x7
+	.4byte	0x88
+	.byte	0x2
+	.byte	0x91
+	.byte	0x60
+	.byte	0xf
+	.4byte	.LBB2
+	.4byte	.LBE2-.LBB2
+	.byte	0x10
+	.string	"i"
+	.byte	0x5
+	.byte	0x8f
+	.byte	0xa
+	.4byte	0x6a
+	.byte	0x2
+	.byte	0x91
+	.byte	0x6c
+	.byte	0
 	.byte	0
 	.byte	0x5
 	.4byte	.LASF17
@@ -1029,8 +1069,8 @@ main:
 	.4byte	.LFE319-.LFB319
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x128
-	.byte	0xe
+	.4byte	0x14d
+	.byte	0x11
 	.4byte	.LASF13
 	.byte	0x4
 	.byte	0x1d
@@ -1040,8 +1080,8 @@ main:
 	.byte	0x91
 	.byte	0x6c
 	.byte	0
-	.byte	0xf
-	.4byte	.LASF25
+	.byte	0x12
+	.4byte	.LASF26
 	.byte	0x4
 	.byte	0x16
 	.byte	0x1c
@@ -1050,7 +1090,7 @@ main:
 	.4byte	.LFE318-.LFB318
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x152
+	.4byte	0x177
 	.byte	0x2
 	.4byte	.LASF13
 	.byte	0x4
@@ -1061,7 +1101,7 @@ main:
 	.byte	0x91
 	.byte	0x6c
 	.byte	0
-	.byte	0x10
+	.byte	0x13
 	.4byte	.LASF18
 	.byte	0x3
 	.2byte	0x325
@@ -1070,8 +1110,8 @@ main:
 	.4byte	.LFE209-.LFB209
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x178
-	.byte	0x11
+	.4byte	0x19d
+	.byte	0x14
 	.string	"v"
 	.byte	0x3
 	.2byte	0x325
@@ -1089,7 +1129,7 @@ main:
 	.4byte	.LFE23-.LFB23
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1a4
+	.4byte	0x1c9
 	.byte	0x6
 	.string	"v"
 	.byte	0x33
@@ -1336,6 +1376,25 @@ main:
 	.byte	0xb
 	.byte	0x39
 	.byte	0xb
+	.byte	0x3c
+	.byte	0x19
+	.byte	0x1
+	.byte	0x13
+	.byte	0
+	.byte	0
+	.byte	0xe
+	.byte	0x2e
+	.byte	0x1
+	.byte	0x3f
+	.byte	0x19
+	.byte	0x3
+	.byte	0xe
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0xb
+	.byte	0x39
+	.byte	0xb
 	.byte	0x11
 	.byte	0x1
 	.byte	0x12
@@ -1348,7 +1407,33 @@ main:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0xe
+	.byte	0xf
+	.byte	0xb
+	.byte	0x1
+	.byte	0x11
+	.byte	0x1
+	.byte	0x12
+	.byte	0x6
+	.byte	0
+	.byte	0
+	.byte	0x10
+	.byte	0x34
+	.byte	0
+	.byte	0x3
+	.byte	0x8
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0xb
+	.byte	0x39
+	.byte	0xb
+	.byte	0x49
+	.byte	0x13
+	.byte	0x2
+	.byte	0x18
+	.byte	0
+	.byte	0
+	.byte	0x11
 	.byte	0x5
 	.byte	0
 	.byte	0x3
@@ -1365,7 +1450,7 @@ main:
 	.byte	0x18
 	.byte	0
 	.byte	0
-	.byte	0xf
+	.byte	0x12
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x3
@@ -1392,7 +1477,7 @@ main:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x10
+	.byte	0x13
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x3
@@ -1417,7 +1502,7 @@ main:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x11
+	.byte	0x14
 	.byte	0x5
 	.byte	0
 	.byte	0x3
@@ -1450,6 +1535,8 @@ main:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF24:
+	.string	"uart_write"
 .LASF20:
 	.string	"flush_cpu_dcache"
 .LASF19:
@@ -1472,9 +1559,9 @@ main:
 	.string	"short unsigned int"
 .LASF22:
 	.string	"GNU C17 12.1.0 -mabi=ilp32 -mtune=rocket -misa-spec=2.2 -march=rv32i -g -ffreestanding"
-.LASF24:
-	.string	"main"
 .LASF25:
+	.string	"main"
+.LASF26:
 	.string	"irq_getmask"
 .LASF17:
 	.string	"irq_setmask"

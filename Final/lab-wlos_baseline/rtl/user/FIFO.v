@@ -12,8 +12,8 @@ module FIFO (
   output full,
   output empty
 );
-  reg [31:0]mem[0:4];
-  reg [2:0]wr_ptr,rd_ptr,count;
+  reg [31:0]mem[0:511];
+  reg [8:0]wr_ptr,rd_ptr,count;
   always@(posedge clk)begin
     if(reset)begin
       mem[0]<=32'd0;
@@ -32,10 +32,10 @@ module FIFO (
 
   always@(posedge clk)begin
     if(reset)begin
-      wr_ptr<=3'd0;
+      wr_ptr<=9'd0;
     end
     else if(wr_en&~full) begin
-      wr_ptr<=wr_ptr+3'd1;
+      wr_ptr<=wr_ptr+9'd1;
     end
     else begin
       wr_ptr<=wr_ptr;
@@ -57,10 +57,10 @@ module FIFO (
   
   always@(posedge clk)begin
     if(reset)begin
-      rd_ptr<=3'd0;
+      rd_ptr<=9'd0;
     end
     else if(rd_en&~empty) begin
-      rd_ptr<=rd_ptr+3'd1;
+      rd_ptr<=rd_ptr+9'd1;
     end
     else begin
       rd_ptr<=rd_ptr;
@@ -69,20 +69,20 @@ module FIFO (
   
   always@(posedge clk)begin
     if(reset)begin
-      count<=3'd0;
+      count<=9'd0;
     end
     else if(wr_en&~rd_en&~full) begin
-      count<=count+3'd1;
+      count<=count+9'd1;
     end
     else if(rd_en&~wr_en&~empty) begin
-      count<=count-3'd1;
+      count<=count-9'd1;
     end   
     else begin
       count<=count;
     end 
   end
   
-  assign full=(count==3'd5)?1'b1:1'b0;
-  assign empty=(count==3'd0)?1'b1:1'b0;
+  assign full=(count==9'd511)?1'b1:1'b0;
+  assign empty=(count==9'd0)?1'b1:1'b0;
 
 endmodule

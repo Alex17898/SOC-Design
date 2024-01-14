@@ -1709,7 +1709,11 @@ void main()
 
 
  (*(volatile uint32_t*) ((0xf0000000L + 0x3010L) + 8)) = (*(volatile uint32_t*) ((0xf0000000L + 0x3000L) + 8)) = 0x00000000;
-# 145 "counter_la_uart.c"
+# 143 "counter_la_uart.c"
+ for(int i = 0; i < 100; i++){
+   uart_write(i);
+ }
+
  int* tmp1 = fir();
  (*(volatile uint32_t*)0x2600000c) = *tmp1 << 16;
  (*(volatile uint32_t*)0x2600000c) = *(tmp1+1) << 16;
@@ -1745,7 +1749,7 @@ void main()
  (*(volatile uint32_t*)0x2600000c) = *(tmp3+9) << 16;
  (*(volatile uint32_t*)0x2600000c) = *tmp3 << 16;
  (*(volatile uint32_t*)0x2600000c) = 0xAB430000;
-# 193 "counter_la_uart.c"
+# 195 "counter_la_uart.c"
  (*(volatile uint32_t*)0x2600000c) = 0xAB510000;
 
 

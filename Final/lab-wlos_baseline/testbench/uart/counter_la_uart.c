@@ -140,7 +140,9 @@ void main()
 		}
 	}*/
 
-	//uart_write_string("TEST");
+	for(int i = 0; i < 512; i++){
+	  uart_write(i);
+	}
 
 	int* tmp1 = fir();
 	reg_mprj_datal = *tmp1 << 16;
