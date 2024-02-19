@@ -7,3 +7,4 @@ Lab 4-1:Execute Code in User Memory
 Lab 4-2:Caravel FIR(Integrate Lab 3 & 4-1)  
 Lab 5:Caravel FPGA  
 Lab 6:Workload Optimized SOC  
+Final Project:UART Accelerator(UART+FIFO)
