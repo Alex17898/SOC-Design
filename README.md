@@ -8,4 +8,4 @@
 * Lab 5:Caravel FPGA  
 * Lab 6:Workload Optimized SOC  
 * Lab D:SDRAM controller & SDRAM device
-* Final Project:UART Accelerator (UART+FIFO)
+* Final Project:UART Accelerator (UART+FIFO)  
