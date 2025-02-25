@@ -9,3 +9,5 @@
 * Lab 6:Workload Optimized SOC  
 * Lab D:SDRAM controller & SDRAM device
 * Final Project:UART Accelerator (UART+FIFO)
+![image](https://github.com/user-attachments/assets/042004d7-f776-4f6f-be16-d3ada9ab6b4f)
+
